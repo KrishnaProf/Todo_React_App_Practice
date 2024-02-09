@@ -7,6 +7,7 @@ import CreateTodos from './components/createTodos'
 function App() {
   const [todos, setTodos] = useState([])
 
+  
   useEffect(() => {
     axios.get('http://localhost:3000/todos')
     .then((res) => {
